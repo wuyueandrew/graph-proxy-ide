@@ -42,7 +42,7 @@ spec:
         - --log_level
         - INFO
         - --k8s_namespace
-        - default
+        - graph-manager
         - --k8s_service_type
         - NodePort
         - --preemptive
