@@ -1,0 +1,17 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: graphscope-coordinator-service
+  namespace: graph-manager
+spec:
+  type: NodePort
+  selector:
+    graphscope.components: coordinator
+  ports:
+    - port: 59001
+      targetPort: 59001
+      protocol: TCP
+      name: rpc
+    - port: 8888
+      nodePort: 30080
+      name: http
