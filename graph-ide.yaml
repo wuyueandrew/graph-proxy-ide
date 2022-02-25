@@ -88,7 +88,7 @@ spec:
         env:
         - name: PYTHONUNBUFFERED
           value: "TRUE"
-        image: registry.cn-hongkong.aliyuncs.com/graphscope/graphscope:0.9.1
+        image: registry.cn-hongkong.aliyuncs.com/graphscope/graphscope:latest
         imagePullPolicy: Always
         lifecycle:
           preStop:
@@ -118,7 +118,7 @@ spec:
             memory: 4Gi
         terminationMessagePath: /dev/termination-log
         terminationMessagePolicy: File
-      - image: registry.cn-hongkong.aliyuncs.com/graphscope/jupyter:0.9.1
+      - image: registry.cn-hongkong.aliyuncs.com/graphscope/jupyter:latest
         imagePullPolicy: Always
         name: jupyter
         ports:
